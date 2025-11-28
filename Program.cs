@@ -29,5 +29,6 @@ app.UseOpenApi();
 app.UseSwaggerUi();
 
 app.MapControllers();
+app.MapGet("/", () => "API is running!");
 
 app.Run();
